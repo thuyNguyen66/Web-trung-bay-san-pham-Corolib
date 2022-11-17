@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <title>COLORLIB</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header__left text-else">
+        <h1>colorlib<span>.</span></h1>
+        <p>+ SPACE</p>
+      </div>
+      <div class="header__right">
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-tablet-screen-button"></i>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-xmark" id="btn-exit"></i>
+      </div>
+    </div>
+    <label for="check">
+      <div class="menu">
+        <label for="check">
+          <div class="menu-items">
+            <li class="down" onclick = "Click()"><a href="#" class="light">Home</a></li>
+            <li  onclick = "Click()"><a href="#portfolio">Portfolio</a></li>
+            <li  onclick = "Click()"><a href="#services">Services</a></li>
+            <li  onclick = "Click()"><a href="#about">About</a></li>
+            <li  onclick = "Click()"><a href="#contact">Contact</a></li>
+          </div>
+        </label>
+        <label for="check">
+            <i class="fa-solid fa-xmark icon-exit"></i>
+        </label>
+        <input type="checkbox" name="" id="check" class="checkbox hidden" onclick="clickCheckBox()"/>
+      </div>
+    </label>
+    <div id="main">
+      <div id="sub-header">
+        <div class="sub-header__left">
+          <h2>Space<span>.</span></h2>
+        </div>
+        <div class="sub-header__right">
+          <i class="fa-solid fa-bars btn-menu"></i>
+        </div>
+      </div>
+
+      <!-- INTRO -->
+      <div class="intro">
+        <h1 class="intro__header text-else">
+          Hey! I'm <b>Space<span>.</span></b>
+        </h1>
+        <p>
+          A minimal, clean, and AJAX driven free portfolio template created by
+          the fine folks at Colorlib.
+        </p>
+        <div class="intro__line">
+          <p>More free templates here</p>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+
+      <!-- portfolio -->
+      <div class="portfolio mt-140" id="portfolio">
+        <div class="col">
+          <div class="product__item ">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_1.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_6.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_9.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product__item">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_2.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_4.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_10.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__link">
+              <i class="fa-solid fa-link"></i>
+            </div>
+            <div class="product__item-img">
+              <img src="./assets/images/product_12.jpg" alt="" />
+            </div>
+            <div class="product__more">
+              <p>Project Number 1</p>
+              <article>web, branding</article>
+            </div>
+          </div>
+        </div>
+        <div class="col col-wrap-tablet">
+          <div class="wrap-tablet col-left">
+            <div class="product__item">
+              <div class="product__link">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="product__item-img">
+                <img src="./assets/images/product_3.jpg" alt="" />
+              </div>
+              <div class="product__more">
+                <p>Project Number 1</p>
+                <article>web, branding</article>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product__link">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="product__item-img">
+                <img src="./assets/images/product_5.jpg" alt="" />
+              </div>
+              <div class="product__more">
+                <p>Project Number 1</p>
+                <article>web, branding</article>
+              </div>
+            </div>
+          </div>
+          <div class="col wrap-tablet col-right">
+            <div class="product__item">
+              <div class="product__link">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="product__item-img">
+                <img src="./assets/images/product_8.jpg" alt="" />
+              </div>
+              <div class="product__more">
+                <p>Project Number 1</p>
+                <article>web, branding</article>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product__link">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="product__item-img">
+                <img src="./assets/images/product_11.jpg" alt="" />
+              </div>
+              <div class="product__more">
+                <p>Project Number 1</p>
+                <article>web, branding</article>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product__link">
+                <i class="fa-solid fa-link"></i>
+              </div>
+              <div class="product__item-img">
+                <img src="./assets/images/product_7.jpg" alt="" />
+              </div>
+              <div class="product__more">
+                <p>Project Number 1</p>
+                <article>web, branding</article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Detail -->
+      <div class="detail hidden">
+        <i class="fa-solid fa-xmark icon-exit-detail"></i>
+        <div class="portfolio__detail mt-140">
+          <div class="portfolio__detail-img">
+            <img src="./assets/images/product_1.jpg" alt="">
+          </div>
+          <div class="portfolio__detail-info">
+            <div class="detail__info-address">
+              <div class="address">
+                <div class="date">
+                  <p class="title">PROJECT DATE</p>
+                  <article>March 9th, 2020</article>
+                </div>
+                <div class="name">
+                  <p class="title">CLIENT</p>
+                  <article>Colorlib</article>
+                </div>
+              </div>
+              <div class="website">
+                <div class="role">
+                  <p class="title">ROLE</p>
+                  <article class="text-color">March 9th, 2020</article>
+                </div>
+                <div class="visit">
+                  <p class="title">VISIT</p>
+                  <a href="" class="text-color">preview.colorlib.com</a>
+                </div>
+              </div>
+            </div>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          </div>
+        </div>
+      </div>
+      <!-- services -->
+
+      <div class="services mt-140" id="services">
+        <h1 class="text-center">Services</h1>
+        <p class="text-center">The skills to pay the bills.</p>
+        <div class="services__category row">
+          <div class="services__category-item design col l-4 m-6 c-12">
+            <i class="fa-solid fa-laptop"></i>
+            <p class="design__title">Web Design</p>
+            <article>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </article>
+          </div>
+          <div class="services__category-item photo col l-4 m-6 c-12">
+            <i class="fa-solid fa-camera-retro"></i>
+            <p class="design__title">Photography</p>
+            <article>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </article>
+          </div>
+          <div class="services__category-item marketing col l-4 m-6 c-12">
+            <i class="fa-solid fa-peace"></i>
+            <p class="design__title">Marketing</p>
+            <article>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </article>
+          </div>
+          <div class="services__category-item app col l-4 m-6 c-12">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p class="design__title">App Development</p>
+            <article>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </article>
+          </div>
+          <div class="services__category-item brand col l-4 m-6 c-12">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p class="design__title">Branding</p>
+            <article>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </article>
+          </div>
+          <div class="services__category-item search col l-4 m-6 c-12">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p class="design__title">Search Ranking</p>
+            <article>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="about mt-140" id="about">
+        <div class="about__header col l-6 m-12 c-12">
+          <h1 class="mb-25">About</h1>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+        </div>
+        <div class="about__info mt-50">
+          <div class="about__info-img">
+            <img src="./assets/images/about.jpg" alt="" />
+            <div class="hight">
+              <div class="hight__title">12 Years of experience</div>
+              <p><i class="fa-solid fa-arrow-right"></i> See portfolio</p>
+              <p><i class="fa-solid fa-arrow-right"></i> Download my CV</p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info__bio">
+              <h3>Bio</h3>
+              <br />
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean.
+              </p>
+              <br />
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <br />
+              <h3 class="mb-25">Work Experience</h3>
+              <div class="info__work">
+                <div class="info__work-senior">
+                  <div class="senior-item">
+                    <i class="fa-solid fa-display"></i>
+                    <div class="senior-item__right">
+                      <p>Senior Web Designer</p>
+                      <p>XYZ Agency</p>
+                      <p>2012-2014</p>
+                    </div>
+                  </div>
+                  <div class="senior-item">
+                    <i class="fa-solid fa-display"></i>
+                    <div class="senior-item__right">
+                      <p>Senior Web Designer</p>
+                      <p>XYZ Agency</p>
+                      <p>2012-2014</p>
+                    </div>
+                  </div>
+                  <div class="senior-item">
+                    <i class="fa-solid fa-display"></i>
+                    <div class="senior-item__right">
+                      <p>Senior Web Designer</p>
+                      <p>XYZ Agency</p>
+                      <p>2012-2014</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__work-engineer">
+                  <div class="senior-item">
+                    <i class="fa-solid fa-display"></i>
+                    <div class="senior-item__right">
+                      <p>Front-end Engineer</p>
+                      <p>StudioLab Studio</p>
+                      <p>2012-2014</p>
+                    </div>
+                  </div>
+                  <div class="senior-item">
+                    <i class="fa-solid fa-display"></i>
+                    <div class="senior-item__right">
+                      <p>Front-end Engineer</p>
+                      <p>StudioLab Studio</p>
+                      <p>2012-2014</p>
+                    </div>
+                  </div>
+                  <div class="senior-item">
+                    <i class="fa-solid fa-display"></i>
+                    <div class="senior-item__right">
+                      <p>Front-end Engineer</p>
+                      <p>StudioLab Studio</p>
+                      <p>2012-2014</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills -->
+      <div class="skills mt-140">
+        <h2 class="text-center">Skills</h2>
+        <p class="text-center">The skills to pay the bills.</p>
+        <div class="skills-soft">
+          <div class="container mt-50">
+            <div class="card">
+              <div class="percent" style="--clr: #ff2e63; --num: 98">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="number">
+                  <h3>98%</h3>
+                  <p>WordPress</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="percent" style="--clr: #ff2e63; --num: 95">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="number">
+                  <h3>95%</h3>
+                  <p>Web Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="percent" style="--clr: #ff2e63; --num: 89">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="number">
+                  <h3>89%</h3>
+                  <p>Web/Mobile App</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="percent" style="--clr: #ff2e63; --num: 85">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="50" cy="50" r="50"></circle>
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <div class="number">
+                  <h3>85%</h3>
+                  <p>Photoshop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonials -->
+      <div class="testimonials" id="testimonials">
+        <div class="header-content mt-140">
+          <div class="text-center">
+            <h2 class="text-center">Testimonials</h2>
+            <p class="text-center">What clients say...</p>
+          </div>
+        </div>
+        <div class="testimonials__person">
+          <div class="person">
+            <div class="img">
+              <img src="./assets/images/person1.jpg" alt="" />
+            </div>
+            <div class="name">James Smith</div>
+            <div class="designation">CEO & Co-Founder</div>
+            <div class="article">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </div>
+          </div>
+          <div class="person">
+            <div class="img">
+              <img src="./assets/images/person2.jpg" alt="" />
+            </div>
+            <div class="name">James Smith</div>
+            <div class="designation">CEO & Co-Founder</div>
+            <div class="article">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </div>
+          </div>
+          <div class="person">
+            <div class="img">
+              <img src="./assets/images/person3.jpg" alt="" />
+            </div>
+            <div class="name">James Smith</div>
+            <div class="designation">CEO & Co-Founder</div>
+            <div class="article">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </div>
+          </div>
+          <div class="person">
+            <div class="img">
+              <img src="./assets/images/person1.jpg" alt="" />
+            </div>
+            <div class="name">James Smith</div>
+            <div class="designation">CEO & Co-Founder</div>
+            <div class="article">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </div>
+          </div>
+          <div class="person">
+            <div class="img">
+              <img src="./assets/images/person2.jpg" alt="" />
+            </div>
+            <div class="name">James Smith</div>
+            <div class="designation">CEO & Co-Founder</div>
+            <div class="article">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </div>
+          </div>
+          <!-- end person -->
+        </div>
+      </div>
+      <div class="nav">
+        <i class="fa-solid fa-arrow-left left"></i>
+        <i class="fa-solid fa-arrow-right right"></i>
+      </div>
+
+      <!-- end testimonials -->
+
+      <!-- BLOG -->
+      <div class="blog mt-140">
+        <h3 class="text-center">Blog Post</h3>
+        <br />
+        <p class="text-center">News & Updates</p>
+        <div class="blog__items row">
+          <div class="item col l-3 m-6 c-12">
+            <img src="./assets/images/blog_1.jpg" alt="" />
+            <p>Separated they live in</p>
+            <article>
+              <span>Aug 4, 2020 by</span> Admin <span>in</span> Web Design
+            </article>
+          </div>
+          <div class="item col l-3 m-6 c-12">
+            <img src="./assets/images/blog_2.jpg" alt="" />
+            <p>Separated they live in</p>
+            <article>
+              <span>Aug 4, 2020 by</span> Admin <span>in</span> Web Design
+            </article>
+          </div>
+          <div class="item col l-3 m-6 c-12">
+            <img src="./assets/images/blog_3.jpg" alt="" />
+            <p>Separated they live in</p>
+            <article>
+              <span>Aug 4, 2020 by</span> Admin <span>in</span> Web Design
+            </article>
+          </div>
+          <div class="item col l-3 m-6 c-12">
+            <img src="./assets/images/blog_4.jpg" alt="" />
+            <p>Separated they live in</p>
+            <article>
+              <span>Aug 4, 2020 by</span> Admin <span>in</span> Web Design
+            </article>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT -->
+
+      <div class="contact mt-140" id="contact">
+        <h3 class="text-center">Contact</h3>
+        <br />
+        <p class="text-center">Available for work. Get in touch</p>
+        <br /><br />
+        <div class="contact__content">
+          <div class="contact__form mt-50">
+            <div class="line1">
+              <input type="text" class="w50" placeholder="Firstname" />
+              <input type="text" class="w50" placeholder="Lastname" />
+            </div>
+            <input type="email" class="w100" placeholder="Email address" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="w100"
+              placeholder="Write your message"
+            ></textarea>
+            <button>Send Message</button>
+          </div>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29794.008787747123!2d105.81932650688074!3d21.022636637686713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1661419133429!5m2!1svi!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer mt-140">
+      <div class="footer__category">
+        <div class="footer__category-item home">
+          <h2 class="home__title">Home</h2>
+          <ul>
+            <li><a href="#">Colorlib</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer__category-item project">
+          <h2>Project</h2>
+          <ul>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">Colorlib</a></li>
+            <li><a href="#">Free Templates</a></li>
+            <li><a href="#">WordPress Themes</a></li>
+          </ul>
+        </div>
+        <div class="footer__category-item service">
+          <h2>Service</h2>
+          <ul>
+            <li><a href="#">Colorlib</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Freebies</a></li>
+          </ul>
+        </div>
+        <div class="footer__category-item contact">
+          <h2>Contact</h2>
+          <ul>
+            <li>43 Raymouth Rd. Baltemover, London 3910</li>
+            <li><a href="#">(+84) 336 337 074</a></li>
+            <li><a href="#">thuyabc6620@gmail.com</a></li>
+          </ul>
+          <h2>Connect</h2>
+          <p class="connect">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-solid fa-basketball"></i>
+          </p>
+        </div>
+      </div>
+      <p>
+        Copyright ©2022 All rights reserved | This template is made with by
+        Colorlib
+      </p>
+    </div>
+  </body>
+  <script>
+    const listBox = document.querySelectorAll(".person");
+    const wrapperBox = document.querySelector(".testimonials__person");
+    const btnLeft = document.querySelector(".left");
+    const btnRight = document.querySelector(".right");
+    const reviewDiv = document.querySelector(".testimonials");
+    const btnexit = document.querySelector('#btn-exit');
+    const header = document.querySelector(".header");
+    const checkbox = document.querySelector(".checkbox");
+    const menu = document.querySelector(".menu");
+    const btnMenu = document.querySelector(".btn-menu");
+    const main = document.querySelector("#main");
+    const menuItem = document.querySelectorAll('.menu-items');
+    const productItem = document.querySelectorAll('.product__item');
+    const product = document.querySelector('.portfolio');
+    const detail = document.querySelector('.detail');
+
+    const light = document
+    console.log(menuItem);
+    
+    // show header
+
+    btnexit.onclick = () => {
+      header.style.display = "none";
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // responsive
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 1366) {
+          make_slide(3);
+        } else if (window.innerWidth >= 992) {
+          make_slide(2);
+        } else {
+          make_slide(1);
+        }
+      });
+
+      const media = [
+        window.matchMedia("(min-width: 1366px)"),
+        window.matchMedia("(min-width: 992px)"),
+      ];
+
+      if (media[0].matches) {
+        make_slide(3);
+      } else if (media[1].matches) {
+        make_slide(2);
+      } else {
+        make_slide(1);
+      }
+    });
+
+    function make_slide(amountSlideAppear) {
+      // set width and margin for item slide
+      const widthItemAndMargin = reviewDiv.offsetWidth / amountSlideAppear;
+      let widthAllBox = widthItemAndMargin * listBox.length;
+      wrapperBox.style.width = `${widthAllBox}px`;
+
+      listBox.forEach((element) => {
+        element.style.marginRight = "20px";
+        element.style.width = `${widthItemAndMargin - 20}px`;
+      });
+
+      // handle slide
+      let count = 0;
+      let spacing = widthAllBox - amountSlideAppear * widthItemAndMargin;
+      btnRight.addEventListener("click", function () {
+        count += widthItemAndMargin;
+
+        if (count > spacing) {
+          count = 0;
+        }
+        wrapperBox.style.transform = `translateX(${-count}px)`;
+      });
+
+      btnLeft.addEventListener("click", function () {
+        count -= widthItemAndMargin;
+
+        if (count < 0) {
+          count = spacing;
+        }
+        wrapperBox.style.transform = `translateX(${-count}px)`;
+      });
+    }
+    function clickCheckBox() {
+      console.log(checkbox);
+      if (checkbox.checked == true) {
+        menu.style.display = "none";
+      }
+    }
+    btnMenu.onclick = () => {
+      menu.style.display = "block";
+      menu.style.animation= "Menu linear 0.6s";
+    }
+    function Click(){
+      menu.style.display = "none";
+      
+    }
+    console.log(productItem);
+    productItem.onclick = () => {
+      console.log(1);
+      product.style.display = 'none';
+      detail.style.display = 'block';
+      detail.style.animation = "Detail linear 1s"
+    }
+    
+  </script>
+</html>

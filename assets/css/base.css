@@ -1,0 +1,13 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --bg-color: #333;
+    --pink-color: #ff2e63;
+    --primary-color: #ee4d2d;
+    --border-color: #dbdbdb;
+    --start-gold-rate: #ffce3e;
+
+}
+* {
+    box-sizing: inherit;
+}
